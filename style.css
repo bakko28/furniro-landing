@@ -151,7 +151,6 @@ main {
     align-items: center;
     justify-content: start;
     width: 100%;
-    border: 2px green solid;
     margin-bottom: 56px;
 }
 
@@ -163,7 +162,6 @@ main .new_collection_box {
     background-position: center;
     height: 900px;
     width: 100%;
-    border: 2px red solid;
     margin-bottom: 56px;
 }
 
@@ -254,6 +252,112 @@ main .browse_range .card_box .card img {
     margin-bottom: 32px;
 }
 
+main .our-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+main .our-products .head-text {
+    color: #3a3a3a;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+main .our-products .card_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .our-products .card_box .topcard_box, main .our-products .card_box .bottomcard_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+main .our-products .card_box .card {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 0px 16px;
+}
+
+main .our-products .card_box .card .notification-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #E97171;
+    border-radius: 48px;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+main .our-products .card_box .card .description_card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F5F7;
+    width: 100%;
+    padding: 16px 12px;
+}
+
+main .our-products .card_box .card .description_card .head-text {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+main .our-products .card_box .card .description_card .desc-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #898989;
+    margin-bottom: 8px;
+}
+
+main .our-products .card_box .card .description_card .price_box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 16px;
+}
+
+main .our-products .card_box .card .description_card .price_box .main-price-text {
+    margin-right: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+main .our-products .card_box .card .description_card .price_box .second-price-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #B0B0B0;
+    text-decoration: line-through;
+}
+
+main .our-products button {
+    border: 2px #B88E2F solid;
+    color: #B88E2F;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 74px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -331,4 +435,65 @@ footer .topinfo_box .news_box button {
     font-size: 14;
     color: #000;
     border-bottom: 1px #000 solid;
+}
+
+@media (max-width: 800px) {
+    main .our-products .card_box .topcard_box, main .our-products .card_box .bottomcard_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .our-products .card_box .topcard_box .card, main .our-products .card_box .bottomcard_box .card{
+        margin-bottom: 32px;
+        margin-right: 0px;
+    }
+
+    main .browse_range {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .browse_range .desc-text{
+        width: 350px;
+    }
+
+    main .browse_range .card_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .new_collection_box .info_new_collection {
+        width: 100%;
+        padding: 16px;
+        left: 0px;
+        right: 0px;
+    }
+
+    main .new_collection_box .info_new_collection .new-coll-head {
+        font-size: 48px;
+    }
+
+    main .new_collection_box .info_new_collection .new-coll-desc {
+        width: 100%;
+    }
+
+    footer {
+        padding: 32px;
+    }
+    
+    footer .topinfo_box {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    footer .topinfo_box .links_box {
+        margin: 0;
+        margin-top: 32px;
+    }
 }
